@@ -1,0 +1,320 @@
+.dashboard-page{
+    min-height:100vh;
+    background:#274b8a;
+    padding:20px 40px;
+    box-sizing:border-box;
+}
+
+/* =======================
+   Top Header
+======================= */
+
+.top-bar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:40px;
+}
+
+.create-btn{
+    background:#22c55e;
+    color:white;
+    border:none;
+    padding:10px 22px;
+    border-radius:8px;
+    font-size:15px;
+    cursor:pointer;
+}
+
+.create-btn:hover{
+    background:#16a34a;
+}
+
+.user-info{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    color:white;
+    font-weight:500;
+}
+
+.user-info button{
+    margin-top:10px;
+    background:#1565c0;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.user-info button:hover{
+    background:#0d47a1;
+}
+
+/* =======================
+   Navigation
+======================= */
+
+.nav-pill{
+    background:white;
+    border-radius:40px;
+    padding:10px 25px;
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+}
+
+.nav-pill ul{
+    display:flex;
+    list-style:none;
+    margin:0;
+    padding:0;
+    gap:35px;
+}
+
+.nav-pill li{
+    cursor:pointer;
+    font-weight:600;
+    padding:8px 5px;
+    color:#444;
+}
+
+.nav-pill li:hover{
+    color:#1565c0;
+}
+
+.active-tab{
+    color:#1565c0;
+    border-bottom:3px solid #1565c0;
+}
+
+/* =======================
+   Queue
+======================= */
+
+.queue-container{
+    margin-top:20px;
+}
+
+.queue-container h2{
+    color:white;
+    margin-bottom:20px;
+}
+
+/* =======================
+   Loan Table
+======================= */
+
+.loan-table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+}
+
+.loan-table thead{
+    background:#374151;
+    color:white;
+}
+
+.loan-table th{
+    padding:16px;
+    text-align:left;
+    font-size:15px;
+}
+
+.loan-table td{
+    padding:16px;
+    border-bottom:1px solid #ececec;
+    color:#333;
+}
+
+.loan-table tbody tr:hover{
+    background:#f5f9ff;
+}
+
+.loan-table tbody tr:last-child td{
+    border-bottom:none;
+}
+
+/* =======================
+   Buttons
+======================= */
+
+.action-btn{
+    background:#1565c0;
+    color:white;
+    border:none;
+    padding:8px 18px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.action-btn:hover{
+    background:#0d47a1;
+}
+
+.waiting-btn{
+    background:#f59e0b;
+    color:white;
+    border:none;
+    padding:8px 18px;
+    border-radius:6px;
+}
+
+.approved-btn{
+    background:#16a34a;
+    color:white;
+    border:none;
+    padding:8px 18px;
+    border-radius:6px;
+}
+
+.approve-btn{
+    background:#16a34a;
+    color:white;
+    border:none;
+    padding:8px 18px;
+    border-radius:6px;
+    cursor:pointer;
+    margin-right:10px;
+}
+
+.approve-btn:hover{
+    background:#15803d;
+}
+
+.reject-btn{
+    background:#dc2626;
+    color:white;
+    border:none;
+    padding:8px 18px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.reject-btn:hover{
+    background:#b91c1c;
+}
+
+/* =======================
+   Empty Queue
+======================= */
+
+.empty-card{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    text-align:center;
+    color:#666;
+}
+
+/* =======================
+   Popup
+======================= */
+
+.modal-overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.5);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.modal{
+    background:white;
+    width:350px;
+    padding:25px;
+    border-radius:10px;
+}
+
+.modal h2{
+    margin-bottom:20px;
+    color:#1f2937;
+    font-weight:700;
+}
+
+.modal label{
+    display:block;
+    margin:12px 0;
+    color:#222;
+    font-size:17px;
+    font-weight:500;
+}
+
+.modal button{
+    margin-top:20px;
+    margin-right:10px;
+    padding:10px 20px;
+    cursor:pointer;
+}
+
+.action-group{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:12px;
+}
+
+.view-btn{
+    background:#6b7280;
+    color:#fff;
+    border:none;
+    border-radius:6px;
+    padding:8px 16px;
+    cursor:pointer;
+}
+
+.view-btn:hover{
+    background:#4b5563;
+}
+
+.approve-btn{
+    background:#16a34a;
+    color:white;
+    border:none;
+    border-radius:6px;
+    padding:8px 16px;
+    cursor:pointer;
+}
+
+.approve-btn:hover{
+    background:#15803d;
+}
+
+.reject-btn{
+    background:#dc2626;
+    color:white;
+    border:none;
+    border-radius:6px;
+    padding:8px 16px;
+    cursor:pointer;
+}
+
+.reject-btn:hover{
+    background:#b91c1c;
+}
+
+.action-buttons{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.action-buttons button{
+    min-width:80px;
+    padding:8px 16px;
+    border-radius:6px;
+    font-size:14px;
+    cursor:pointer;
+}
+
+.status-text{
+    color:#f59e0b;
+    font-weight:600;
+    font-size:15px;
+}

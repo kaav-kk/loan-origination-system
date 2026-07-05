@@ -1,0 +1,151 @@
+/* Whole Page */
+.create-loan-page {
+    padding: 30px;
+    background: #f4f6f9;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.create-loan-page h1 {
+    margin-bottom: 25px;
+    color: #2c3e50;
+}
+
+/* Main Container */
+.loan-container {
+    display: flex;
+    gap: 25px;
+}
+
+/* ==========================
+        LEFT STEPPER
+========================== */
+
+.stepper {
+    width: 250px;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,.08);
+}
+
+.stepper div {
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    background: #ececec;
+    font-size: 16px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+/* Completed/Current Step */
+.active {
+    background: #1976d2 !important;
+    color: white;
+}
+
+/* ==========================
+        FORM AREA
+========================== */
+
+.form-area {
+    flex: 1;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,.08);
+    min-height: 550px;
+}
+
+/* Form Heading */
+
+.form-area h2 {
+    margin-bottom: 25px;
+    color: #333;
+}
+
+/* ==========================
+          INPUTS
+========================== */
+
+.form-area input,
+.form-area select {
+
+    width: 100%;
+    padding: 12px;
+
+    margin-top: 8px;
+    margin-bottom: 20px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.form-area label {
+
+    font-weight: 600;
+    color: #444;
+}
+
+/* ==========================
+          BUTTONS
+========================== */
+
+.button-group {
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.button-group button {
+
+    padding: 12px 25px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    transition: .3s;
+}
+
+/* Previous */
+
+.previous-btn {
+
+    background: #757575;
+    color: white;
+}
+
+/* Save Next */
+
+.next-btn {
+
+    background: #1976d2;
+    color: white;
+}
+
+/* Submit */
+
+.submit-btn {
+
+    background: green;
+    color: white;
+}
+
+/* Hover */
+
+.previous-btn:hover,
+.next-btn:hover,
+.submit-btn:hover {
+
+    opacity: .9;
+}
